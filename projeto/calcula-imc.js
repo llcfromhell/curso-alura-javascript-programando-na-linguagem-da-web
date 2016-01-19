@@ -1,3 +1,10 @@
-var trsPacientes = document.getElementsByClassName("paciente");
+var botao = document.getElementById("calcula-imcs");
 
-utils.percorreArray(trsPacientes, pacienteFactory.montaPaciente);
+botao.addEventListener("click", function() {
+
+	var trsPacientes = document.getElementsByClassName("paciente");
+
+	utils.percorreArray(trsPacientes, pacienteFactory.montaPaciente);
+
+});
+
